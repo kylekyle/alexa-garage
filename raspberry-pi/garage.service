@@ -1,0 +1,17 @@
+# /etc/systemd/system/garage.service
+
+[Unit]
+Description=Garage Door Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/alexa-garage/raspberry-pi/
+ExecStartPre=/bin/sh -c 'until ping -c1 google.com; do sleep 1; done;'
+ExecStart=/home/pi/alexa-garage/raspberry-pi/garage
+ExecStop=/bin/kill -- $MAINPID
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
