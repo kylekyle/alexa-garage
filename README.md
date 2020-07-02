@@ -1,6 +1,6 @@
 # Control a Dumb Garage Door Remote with Alexa
 
-Garage door openers that work with Alexa are pretty expensive, so I decided to turn my existing dumb garage door remote into a smart one that can be controlled by Alexa. 
+Garage door openers that work with Alexa are pretty expensive, so I decided to turn my existing dumb garage door remote into a smart one that can be controlled by Alexa using a [Raspberry Pi](https://www.amazon.com/s?k=raspberry+pi). 
 
 ![](https://github.com/kylekyle/alexa-garage/raw/master/images/works-with-alexa.png)
 
